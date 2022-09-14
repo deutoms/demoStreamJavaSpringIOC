@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+MAINTAINER dedi
+COPY target/demo-0.0.1-SNAPSHOT.jar demo-server-1.0.0.jar
+ENTRYPOINT ["java","-jar","/demo-server-1.0.0.jar"]
